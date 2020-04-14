@@ -24,7 +24,7 @@ public class BrowserUtil {
                 break;
 
             case CHROME:
-                System.setProperty("webdriver.chrome.driver","/Users/admin/Downloads/chromedriver80");
+                System.setProperty("webdriver.chrome.driver","target/test-classes/chromedriver80");
                 driver = new ChromeDriver();
                 break;
 
@@ -33,7 +33,7 @@ public class BrowserUtil {
                 break;
 
             case FIREFOX:
-                System.setProperty("webdriver.gecko.driver","/Users/admin/Downloads/geckodriver");
+                System.setProperty("webdriver.gecko.driver","target/test-classes/geckodriver");
                 driver = new FirefoxDriver();
                 break;
         }
